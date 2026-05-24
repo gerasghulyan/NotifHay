@@ -18,8 +18,7 @@ Your original notifications are untouched. All processing happens locally on you
 
 ## Requirements
 
-- Android phone
-- Garmin watch with Garmin Connect installed
+- Android phone with Garmin Connect (already installed if you use a Garmin watch)
 - <a href="https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid" target="_blank">Macrodroid</a> (free, from Google Play)
 
 ---
@@ -78,7 +77,7 @@ Grant Macrodroid notification access when asked.
 1. Open **Garmin Connect**
 2. Go to **Menu → Garmin Devices → your device → Device Settings → Notifications**
 3. Find **NotifHay** in the app list and enable it
-4. *(Optional but recommended)* Disable the original apps (Telegram, WhatsApp, etc.) from the Garmin Connect notification list — otherwise you will get two notifications on your watch: the original `???` one and the transliterated one from NotifHay
+4. **Disable** Telegram, WhatsApp, Viber, Gmail, etc. from the same list — if you skip this step your watch will show both the original `???` and the transliterated version for every message
 
 ### Step 6 — Disable Battery Optimization
 
@@ -117,9 +116,6 @@ NotifHay does **not** connect to the internet. All transliteration is done on-de
 
 **NotifHay stops working after a while:**
 - Disable battery optimization for both NotifHay and Macrodroid (Settings → Battery → App power management)
-
-**Banking apps blocked after enabling accessibility:**
-- NotifHay does **not** require Accessibility Service. The Macrodroid approach works without it. You can safely ignore the "Grant Accessibility" button in the app.
 
 ---
 
