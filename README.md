@@ -20,7 +20,7 @@ Your original notifications are untouched. All processing happens locally on you
 
 - Android phone
 - Garmin watch with Garmin Connect installed
-- [Macrodroid](https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid) (free, from Google Play)
+- <a href="https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid" target="_blank">Macrodroid</a> (free, from Google Play)
 
 ---
 
@@ -28,7 +28,7 @@ Your original notifications are untouched. All processing happens locally on you
 
 ### Step 1 — Install NotifHay
 
-Download and install the latest `notifhay.apk` from the [Releases](../../releases) page.
+<a href="https://github.com/gerasghulyan/NotifHay/raw/main/NotifHay.apk" target="_blank">⬇️ Download NotifHay.apk</a>
 
 > You may need to allow installation from unknown sources in your Android settings.
 
@@ -40,7 +40,7 @@ Download and install the latest `notifhay.apk` from the [Releases](../../release
 
 ### Step 3 — Install Macrodroid
 
-Install [Macrodroid](https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid) from Google Play (free).
+Install <a href="https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid" target="_blank">Macrodroid</a> from Google Play (free).
 
 Grant Macrodroid notification access when asked.
 
