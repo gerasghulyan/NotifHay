@@ -1,8 +1,8 @@
 # NotifHay
 
-**NotifHay** transliterates Armenian notifications into Latin characters so they can be read on your Garmin watch.
+**NotifHay** transliterates Armenian notifications into Latin characters so they can be read on any smartwatch that does not support Armenian script.
 
-Garmin watches cannot display Armenian script — they show `???` instead. NotifHay fixes this by posting a silent Latin copy of every Armenian notification directly to your watch.
+Most smartwatches show `???` instead of Armenian text. NotifHay fixes this by posting a silent Latin copy of every Armenian notification directly to your watch.
 
 ---
 
@@ -10,15 +10,26 @@ Garmin watches cannot display Armenian script — they show `???` instead. Notif
 
 1. A notification arrives on your phone (Telegram, WhatsApp, Viber, etc.)
 2. **Macrodroid** (a free automation app) reads the notification and forwards it to NotifHay
-3. NotifHay transliterates any Armenian text to Latin and posts it to your Garmin watch via Garmin Connect
+3. NotifHay transliterates any Armenian text to Latin and posts it to your watch via its companion app
 
 Your original notifications are untouched. All processing happens locally on your device — nothing is sent anywhere.
 
 ---
 
+## Example
+
+| Original | Transliterated |
+|----------|---------------|
+| Բարև, ինչպե՞ս ես | Barev, inchpes es |
+| Շնորհակալություն | Shnorhagalutyun |
+| Ուզում եմ հանդիպել | Uzum em handipel |
+
+---
+
 ## Requirements
 
-- Android phone with Garmin Connect (already installed if you use a Garmin watch)
+- Android phone
+- A smartwatch with a companion app that mirrors phone notifications (Garmin, Samsung, Xiaomi, Huawei, etc.)
 - <a href="https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid" target="_blank">Macrodroid</a> (free, from Google Play)
 
 ---
@@ -72,10 +83,10 @@ Grant Macrodroid notification access when asked.
 
 - Tap **OK** → save the macro → make sure the toggle is **ON**
 
-### Step 5 — Set up Garmin Connect
+### Step 5 — Set up your watch companion app
 
-1. Open **Garmin Connect**
-2. Go to **Menu → Garmin Devices → your device → Device Settings → Notifications**
+1. Open your watch companion app (e.g. Garmin Connect, Galaxy Wearable, etc.)
+2. Go to notification settings for your watch
 3. Find **NotifHay** in the app list and enable it
 4. **Disable** Telegram, WhatsApp, Viber, Gmail, etc. from the same list — if you skip this step your watch will show both the original `???` and the transliterated version for every message
 
@@ -85,16 +96,6 @@ Grant Macrodroid notification access when asked.
 2. Select **Unrestricted**
 
 This prevents Android from killing NotifHay in the background.
-
----
-
-## Example
-
-| Original | Transliterated |
-|----------|---------------|
-| Բարև, ինչպե՞ս ես | Barev, inchpes es |
-| Շնորհակալություն | Shnorhagalutyun |
-| Ուզում եմ հանդիպել | Uzum em handipel |
 
 ---
 
@@ -109,10 +110,10 @@ NotifHay does **not** connect to the internet. All transliteration is done on-de
 **Not getting notifications on the watch:**
 - Make sure the Macrodroid macro toggle is ON
 - Make sure Macrodroid has notification access (Android Settings → Apps → Macrodroid → Notifications)
-- Make sure "NotifHay" is enabled in Garmin Connect notifications
+- Make sure "NotifHay" is enabled in your watch companion app notifications
 
 **Getting two notifications on the watch:**
-- Disable the original apps (Telegram, WhatsApp, etc.) from Garmin Connect notifications, keep only NotifHay enabled
+- Disable the original apps (Telegram, WhatsApp, etc.) from your watch companion app notifications, keep only NotifHay enabled
 
 **NotifHay stops working after a while:**
 - Disable battery optimization for both NotifHay and Macrodroid (Settings → Battery → App power management)
